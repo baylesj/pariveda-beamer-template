@@ -1,0 +1,76 @@
+\documentclass[12pt, mathserif]{beamer}
+% drop the mathserif if you don't like 
+% article style math
+%\documentclass[handout]{beamer}
+
+%compile with:
+%pdflatex <file_name>.tex 
+%bibtex   <file_name>
+%pdflatex <file_name>.tex
+%pdflatex <file_name>.tex
+
+% Setup appearance:
+\usetheme{OSU}
+\setbeamertemplate{navigation symbols}{}
+
+\mode<handout>{\setbeamercolor{background canvas}{bg=black!5}}
+
+% Standard packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{fancybox}
+\usepackage{multimedia}
+\usepackage{textpos}
+\usepackage[labelformat=simple]{subfig}
+\usepackage[nodayofweek]{datetime}
+\shortdate
+
+\renewcommand{\thesubfigure}{\relax}
+\newcounter{line}	 % This will keep track of the line number
+\setcounter{line}{1} % Make sure its set to the right line for the start
+
+% Define a new command that prints the line counter and increments
+\renewcommand{\l}{\arabic{line}:\addtocounter{line}{1}} 
+
+\newcommand{\tw}[1]{\textcolor{white}{#1}}
+% Author, Title, etc.
+
+\title[\tw{CB NPR}]{\tw{Extending Non-Photorealistic Rendering by Degrees of Symmetry}}
+\author[Nels]{Nels~Oscar}
+\institute[OSU]{EECS
+  \begin{center}
+    \includegraphics[scale=0.5]{tag1.png}
+  \end{center}
+}
+\date[\tw{CS554, \today}]{
+	CS554 Term Presentations\\   
+    \today
+  }
+  
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%Show outline at beginning of each section:
+%\AtBeginSection[]{
+%  \begin{frame}{Outline}
+%  \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+\begin{frame}{Outline}
+  \tableofcontents%[pausesections]
+\end{frame}
+
+\begin{frame}
+	Some math:
+	$$x^2+y^2 = z^2$$
+\end{frame}
+
+\end{document}
+
+
