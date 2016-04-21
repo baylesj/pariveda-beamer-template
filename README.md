@@ -1,4 +1,4 @@
-osu-beamer
+pariveda-beamer-template
 ==========
 
-An Oregon State University themed beamer template.
+A (unofficial) Pariveda Solutions beamer template
